@@ -1,6 +1,8 @@
 # Roblox files
 /*.rbxl
+/*.rbxl.lock
 /*.rbxlx
+/*.rbxlx.lock
 /*.rbxm
 /*.rbxmx
 

@@ -1,0 +1,11 @@
+[package]
+name = "bazalbuilder/lunit"
+description = "Testing made easy."
+version = "0.1.0-alpha"
+license = "MIT"
+authors = ["Bazalbuilder"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+repository = "https://github.com/Bazalbuilder/Lunit"
+
+[dependencies]
