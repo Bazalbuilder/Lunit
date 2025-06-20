@@ -14,9 +14,9 @@ Test._fails = {}
 function Test.new(name: string)
 	local self = {}
 	Test._name = name
-	
+
 	setmetatable(self, Test)
-	
+
 	return self
 end
 
@@ -43,11 +43,11 @@ end
 ]]
 function Test:finish()
 	print("Testing has finished for module", Test._name)
-	
+
 	for module, message in pairs(Test._fails) do
 		warn(module, "| reason:", message)
 	end
-	
+
 	table.clear(Test._fails)
 	return
 end
