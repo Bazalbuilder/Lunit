@@ -6,3 +6,6 @@
 
 # VSCode
 .vscode
+
+# Analysis artifacts
+sourcemap.json
