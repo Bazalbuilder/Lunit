@@ -1,6 +1,6 @@
 --[[
-	The core library for Lunit. Contains all the functions needed for the library to conduct
-	tests.
+	The core library for Lunit. Contains all the functions needed for the library 
+	to conduct tests.
 ]]
 local Core = {}
 
@@ -10,13 +10,13 @@ local Core = {}
 function Core:run(root: Folder)
 	assert(root.Name == "_TESTS_", "Unable to get contents, " .. root.Name .. " is not a test folder.")
 
-	for _, test in root:GetChildren() do
+	for _, test in ipairs(root:GetChildren()) do
 		local success, result = pcall(function()
 			require(test)
 		end)
 
 		if not success then
-			warn("Test " .. test.Name .. " has errored!", result)
+			error(`Test {test.Name} has errored! | {result}`)
 		end
 	end
 
