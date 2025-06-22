@@ -7,7 +7,7 @@ local Tests = require(script.Parent.Parent.Tests)
 ]]
 local function assertEquals(expected: any, result: any, message: string?)
 	if expected ~= result then
-		Tests:fail(message or "Test has failed.")
+		Tests:fail(message)
 	end
 end
 

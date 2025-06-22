@@ -6,7 +6,7 @@ local Tests = require(script.Parent.Parent.Tests)
 ]]
 local function assertNotNil(object: any, message: string?)
 	if object ~= nil then
-		Tests:fail(message or "Test has failed.")
+		Tests:fail(message)
 	end
 end
 
