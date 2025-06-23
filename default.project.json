@@ -4,7 +4,7 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "Shared": {
+      "Lunit": {
         "$path": "src"
       }
     }
