@@ -10,7 +10,7 @@ Navigate to the releases tab and install the .rbxm file. Then, drag the contents
 Another way to install Lunit is by using Wally. For example, adding the dependency to your `wally.toml`:
 ```toml
 [dev-dependencies]
-Lunit = "bazalbuilder/lunit@0.1.1-alpha"
+Lunit = "bazalbuilder/lunit@0.1.2-alpha"
 ```
 
 ## License

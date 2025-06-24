@@ -1,7 +1,7 @@
 [package]
 name = "bazalbuilder/lunit"
 description = "Luau testing made easy."
-version = "0.1.1-alpha"
+version = "0.1.2-alpha"
 license = "MIT"
 authors = ["Bazalbuilder"]
 registry = "https://github.com/UpliftGames/wally-index"

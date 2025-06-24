@@ -2,6 +2,11 @@
 ## Nightly
 * N/A
 
+## v0.1.2-alpha
+* New assertion: assertTrue (Bazal, 23Jun2025)
+* New assertion: assertFalse (Bazal, 23Jun2025)
+* Fixed folder duplication (Bazal, 23Jun2025)
+
 ## v0.1.1-alpha
 * New assertion: assertNotNil (Bazal, 20Jun2025)
 * Added documentation (Bazal, 20Jun2025)
