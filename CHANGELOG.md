@@ -1,6 +1,14 @@
 # Lunit Changelog
 ## Nightly
-* N/A
+* Added a basic Command Line Interface (Bazal, 24Jun2025)
+    * Run it on Roblox Studio's command prompt for it to work. Example:
+        ```luau
+        require(game.ReplicatedStorage.Lunit).cli("run __help")
+        ```
+    * Commands include: `run` `__version` `__help`.
+* Reorganized basically everything. (Bazal, 25Jun2025)
+    * `Tests.luau` and `Core.luau` are now separate collections of scripts.
+* Added to-do scripts (`beforeEach.luau`, `afterEach.luau`, `beforeAll.luau`, `afterAll.luau`)
 
 ## v0.1.2-alpha
 * New assertion: assertTrue (Bazal, 23Jun2025)

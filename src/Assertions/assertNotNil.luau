@@ -1,4 +1,4 @@
-local Tests = require(script.Parent.Parent.Tests)
+local fail = require(script.Parent.Parent.tests.fail)
 
 --[[
 	Assertion that checks if <code>condition</code> is not nil. An optional
@@ -6,7 +6,7 @@ local Tests = require(script.Parent.Parent.Tests)
 ]]
 local function assertNotNil(object: any, message: string?)
 	if object ~= nil then
-		Tests:fail(message)
+		fail(message)
 	end
 end
 
