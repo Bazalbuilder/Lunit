@@ -32,5 +32,4 @@ Remember, don't be afraid to ask a question! It could be beneficial!
 Coming soon.
 
 ### TODO List:
-* CLI Command: `__help`: prints out info about the command or the command list, depending on the arguments.
-* afterAll, afterEach, beforeAll, and beforeEach: requires a bit of knowledge of either coroutines or something else.
+* CLI Command: `__help`: prints out info about the command or the library, depending on the arguments.

@@ -1,5 +1,7 @@
 # Lunit Changelog
 ## Nightly
+
+## v0.2.0-alpha
 * Added a basic Command Line Interface (Bazal, 24Jun2025)
     * Run it on Roblox Studio's command prompt for it to work. Example:
         ```luau

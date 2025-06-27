@@ -13,6 +13,18 @@ local function __help(name: string?)
 		]])
 	end
 
+	if name == "run" then
+		return [[
+			lunit 0.2.0-alpha-run
+			USAGE:
+				require(game.ReplicatedStorage.Lunit).cli("run [PATH]")
+
+			ARGS:
+				[PATH]
+					The path where the test should run.
+		]]
+	end
+
 	return nil
 end
 

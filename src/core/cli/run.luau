@@ -8,7 +8,8 @@ local TestCache = require(Lunit.core.TestCache)
 local function run(...: string)
 	local args = ...
 	if args[1] == "__help" then
-		require(script.Parent.__help)(script.Name)
+		local message = require(script.Parent.__help)(script.Name)
+		print(message)
 		return nil
 	end
 
