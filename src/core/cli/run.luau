@@ -1,14 +1,16 @@
 --[[
 	Runs the given test with arguments provided. The argument should be a Folder or the
-	__help command (when it is added.)
+	__help command
 ]]
+local Lunit = script.Parent.Parent.Parent
+local TestCache = require(Lunit.core.TestCache)
 
 local function run(...: string)
 	local args = ...
-	-- if args[1] == "__help" then
-	-- 	require(script.Parent.__help)(script.Name)
-	-- 	return nil
-	-- end
+	if args[1] == "__help" then
+		require(script.Parent.__help)(script.Name)
+		return nil
+	end
 
 	local splitted = string.split(args[1], ".")
 	local service = game:GetService(splitted[1])
@@ -28,7 +30,10 @@ local function run(...: string)
 	end
 
 	for _, test in instance:GetChildren() do
+		-- TODO: something with core/testData.luau
 		require(test)
+
+		TestCache.run()
 	end
 
 	return nil

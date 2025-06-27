@@ -8,7 +8,7 @@
     * Commands include: `run` `__version` `__help`.
 * Reorganized basically everything. (Bazal, 25Jun2025)
     * `Tests.luau` and `Core.luau` are now separate collections of scripts.
-* Added to-do scripts (`beforeEach.luau`, `afterEach.luau`, `beforeAll.luau`, `afterAll.luau`)
+* Added new test scripts: `afterAll`, `afterEach`, `beforeAll`, `beforeEach` (Bazal, 27Jun2025)
 
 ## v0.1.2-alpha
 * New assertion: assertTrue (Bazal, 23Jun2025)

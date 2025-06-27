@@ -1,9 +1,11 @@
-local Data = require(script.Parent.Data)
+--[[
+	Groups tests into a single scope. Not required, but recommended.
+]]
+local Lunit = script.Parent.Parent
+local TestCache = require(Lunit.core.TestCache)
 
-local function define(description: string, callback: () -> ())
-	Data.currentTest = description
-
-	callback()
+local function define(name: string, callback: () -> ())
+	TestCache.addDefine(name, callback)
 
 	return nil
 end

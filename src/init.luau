@@ -5,10 +5,15 @@ local Lunit = {
 	assertTrue = require(script.assertions.assertTrue),
 
 	cli = require(script.core.cli),
+	fail = require(script.core.fail),
+	TestCache = require(script.core.TestCache),
 
+	afterAll = require(script.tests.afterAll),
+	afterEach = require(script.tests.afterEach),
+	beforeAll = require(script.tests.beforeAll),
+	beforeEach = require(script.tests.beforeEach),
 	define = require(script.tests.define),
-	fail = require(script.tests.fail),
-	getResults = require(script.tests.getResults),
+	test = require(script.tests.test),
 }
 
 return Lunit
